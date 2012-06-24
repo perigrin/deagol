@@ -6,7 +6,12 @@ use Moose;
 use Web::Machine;
 use Deagol::Resource::Page;
 
-sub app { Web::Machine->new( resource => 'Deagol::Resource::Page' )->to_app; }
+sub app {
+    Web::Machine->new(
+        resource => 'Deagol::Resource::Page',
+        tracing  => 1
+    )->to_app;
+}
 
 1;
 __END__
