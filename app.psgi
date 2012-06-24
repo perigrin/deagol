@@ -1,11 +1,6 @@
 #!/usr/bin/perl
-
-use strict;
-use warnings;
-
+use 5.12.1;
 use lib 'lib';
 use Deagol;
 
-Deagol->new(
-
-)->app;
+Deagol->new->app;
